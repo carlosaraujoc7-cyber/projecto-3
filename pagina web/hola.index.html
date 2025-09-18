@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Era de la IA – Interactiva</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .escena {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: none;
+    }
+    button {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📖 Capítulo 1: La Era de la IA</h1>
+
+<button onclick="toggleEscena('escena1')">🎬 Ver Escena 1: El falso Rembrandt</button>
+<div id="escena1" class="escena">
+  <p>En una elegante sala de arte, un grupo de expertos observa un retrato.<br>
+  —“¡Es un Rembrandt!” —exclama uno.<br>
+  Pero segundos después, descubren la verdad: la pintura fue creada por una máquina. Un algoritmo, alimentado con miles de obras del maestro, “aprendió” su estilo y generó un cuadro completamente nuevo.</p>
+  <p><strong>📌 Lección:</strong> La Inteligencia Artificial no solo imita, sino que crea.</p>
+</div>
+
+<script>
+  function toggleEscena(id) {
+    const escena = document.getElementById(id);
+    escena.style.display = (escena.style.display === 'none' || escena.style.display === '') ? 'block' : 'none';
+  }
+</script>
+
+</body>
+</html>
